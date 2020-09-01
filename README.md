@@ -1,6 +1,7 @@
 # html_css
 learning the html and css part its just to learn and contain some basics code.
-it helps to recall different parts of html and css
+it helps to recall different parts of html and css.
+you will learn about nodejs also in this 
 
 
 <a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
