@@ -1,36 +1,9 @@
-const http = require('http');
-const port = 8000;
-const fs= require('fs');
+console.log('hello world!');
+ function add (a,b) {
+     return a+b;
+ };
 
-function requestHandler(req, res){
-    console.log(req.url);
-    res.writeHead(200,{'content-type':'text/html'}); //in  header we tell about the content and additional information coming from the server.
-    let filePath;
-    switch(req.url){
-        case '/':
-            filePath = './index.html'
-            break;
-        case '/profile':
-            filePath ='./profile.html'
-            break;
-        default:
-            filePath ='./404.html'
-    }   
-
-    
-    fs.readFile(filePath,function(err,data){
-        if (err){
-            console.log('error',err);
-            return res.end('<h1>Error</h1>');
-        }
-        return res.end(data);
-    });
-};
-
-const server = http.createServer(requestHandler);
-
-server.listen(port, function(err){
-    if (err){console.log(err);
-    return;
-}console.log('server is up and running on port:',port);
-});
+ console.log(process.agrv);
+const modules=require('./modules');
+console.log(modules.sub(4,5));
+console.log(modules.multiply(6,8));
