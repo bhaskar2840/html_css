@@ -1,11 +1,16 @@
 {
-  "name": "basichttpserver",
+  "name": "calculator",
   "version": "1.0.0",
-  "description": "my first server",
-  "main": "index.js",
+  "description": "this is a sample project for learning nodejs.",
+  "main": "calculator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bhaskar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {}
 }
